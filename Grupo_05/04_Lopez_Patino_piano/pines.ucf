@@ -1,0 +1,28 @@
+//entrada reloj
+NET "clk"       LOC = "E3"	| IOSTANDARD = "LVCMOS33";
+// salidas de audio
+NET "speaker<0>"			LOC = "J3"	| IOSTANDARD = "LVCMOS33";		#Do Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
+NET "speaker<1>"			LOC = "E7"	| IOSTANDARD = "LVCMOS33";		#DoS Bank = 34, Pin name = IO_25_34,							Sch name = SW1
+NET "speaker<2>"			LOC = "F14"	| IOSTANDARD = "LVCMOS33";		#Re  Bank = 34, Pin name = IO_L23P_T3_34,						Sch name = SW2
+NET "speaker<3>"			LOC = "G14"	| IOSTANDARD = "LVCMOS33";		#ReS Bank = 34, Pin name = IO_L19P_T3_34,						Sch name = SW3
+NET "speaker<4>"			LOC = "B13"	| IOSTANDARD = "LVCMOS33";		#Mi  Bank = 34, Pin name = IO_L19N_T3_VREF_34,					Sch name = SW4
+NET "speaker<5>"			LOC = "K2"	| IOSTANDARD = "LVCMOS33";		#Fa Bank = 34, Pin name = IO_L20P_T3_34,						Sch name = SW5
+NET "speaker<6>"			LOC = "P15"	| IOSTANDARD = "LVCMOS33";		#FaS Bank = 34, Pin name = IO_L20N_T3_34,						Sch name = SW6
+NET "speaker<7>"			LOC = "V11"	| IOSTANDARD = "LVCMOS33";		#Sol Bank = 34, Pin name = IO_L10P_T1_34,						Sch name = SW7
+NET "speaker<8>"			LOC = "J4"	| IOSTANDARD = "LVCMOS33";		#SolS Bank = 34, Pin name = IO_L8P_T1-34,						Sch name = SW8
+NET "speaker<9>"			LOC = "V15"	| IOSTANDARD = "LVCMOS33";		#La  Bank = 34, Pin name = IO_L9N_T1_DQS_34,					Sch name = SW9
+NET "speaker<10>"			LOC = "E17"	| IOSTANDARD = "LVCMOS33";		#LaS Bank = 34, Pin name = IO_L9P_T1_DQS_34,					Sch name = SW10
+NET "speaker<11>"			LOC = "D17"	| IOSTANDARD = "LVCMOS33";		#Si Bank = 34, Pin name = IO_L11N_T1_MRCC_34,					Sch name = SW11
+//entradas
+NET "keys<0>"			LOC = "G13"	| IOSTANDARD = "LVCMOS33";		#Do Bank = 34, Pin name = IO_L21P_T3_DQS_34,					Sch name = SW0
+NET "keys<1>"			LOC = "C17"	| IOSTANDARD = "LVCMOS33";		#DoS Bank = 34, Pin name = IO_25_34,							Sch name = SW1
+NET "keys<2>"			LOC = "D18"	| IOSTANDARD = "LVCMOS33";		#Re  Bank = 34, Pin name = IO_L23P_T3_34,						Sch name = SW2
+NET "keys<3>"			LOC = "E18"	| IOSTANDARD = "LVCMOS33";		#ReS Bank = 34, Pin name = IO_L19P_T3_34,						Sch name = SW3
+NET "keys<4>"			LOC = "K16"	| IOSTANDARD = "LVCMOS33";		#Mi  Bank = 34, Pin name = IO_L19N_T3_VREF_34,					Sch name = SW4
+NET "keys<5>"			LOC = "R16"	| IOSTANDARD = "LVCMOS33";		#Fa Bank = 34, Pin name = IO_L20P_T3_34,						Sch name = SW5
+NET "keys<6>"			LOC = "T9"	| IOSTANDARD = "LVCMOS33";		#FaS Bank = 34, Pin name = IO_L20N_T3_34,						Sch name = SW6
+NET "keys<7>"			LOC = "U11"	| IOSTANDARD = "LVCMOS33";		#Sol Bank = 34, Pin name = IO_L10P_T1_34,						Sch name = SW7
+NET "keys<8>"			LOC = "K1"	| IOSTANDARD = "LVCMOS33";		#SolS Bank = 34, Pin name = IO_L8P_T1-34,						Sch name = SW8
+NET "keys<9>"			LOC = "E6"	| IOSTANDARD = "LVCMOS33";		#La  Bank = 34, Pin name = IO_L9N_T1_DQS_34,					Sch name = SW9
+NET "keys<10>"			LOC = "J2"	| IOSTANDARD = "LVCMOS33";		#LaS Bank = 34, Pin name = IO_L9P_T1_DQS_34,					Sch name = SW10
+NET "keys<11>"			LOC = "G6"	| IOSTANDARD = "LVCMOS33";		#Si Bank = 34, Pin name = IO_L11N_T1_MRCC_34,					Sch name = SW11
