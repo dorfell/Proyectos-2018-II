@@ -1,0 +1,15 @@
+net clk loc="E3" | IOSTANDARD="LVCMOS33";
+net reset loc="R10" | IOSTANDARD="LVCMOS33";
+
+net rs loc="B13" | IOSTANDARD="LVCMOS33";
+net rw loc="F14" | IOSTANDARD="LVCMOS33";
+net e loc="D17" | IOSTANDARD="LVCMOS33";
+net lcd_data<0> loc="G14" | IOSTANDARD="LVCMOS33";
+net lcd_data<1> loc="P15" | IOSTANDARD="LVCMOS33";
+net lcd_data<2> loc="V11" | IOSTANDARD="LVCMOS33";
+
+net lcd_data<3> loc="V15" | IOSTANDARD="LVCMOS33";
+net lcd_data<4> loc="K16" | IOSTANDARD="LVCMOS33";
+net lcd_data<5> loc="R16" | IOSTANDARD="LVCMOS33";
+net lcd_data<6> loc="T9" | IOSTANDARD="LVCMOS33";
+net lcd_data<7> loc="U11" | IOSTANDARD="LVCMOS33";

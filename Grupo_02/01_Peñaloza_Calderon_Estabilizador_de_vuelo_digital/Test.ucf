@@ -1,0 +1,88 @@
+#Clock signal
+Net clk LOC= "V10" | IOSTANDARD="LVCMOS33";
+net rst LOC = "B8"|IOSTANDARD="LVCMOS33";
+#ADC señales
+
+NET clk_out LOC = "M10" | IOSTANDARD="LVCMOS33";
+NET en LOC = "N9" | IOSTANDARD="LVCMOS33";
+NET Add_A LOC = "D12" | IOSTANDARD="LVCMOS33";
+
+
+NET buzzer LOC= "V11"| IOSTANDARD="LVCMOS33";
+#Leds
+#NET Data<0> LOC= "U16"| IOSTANDARD="LVCMOS33";
+#NET Data<1> LOC= "V16"| IOSTANDARD="LVCMOS33";
+#NET Data<2> LOC= "U15"| IOSTANDARD="LVCMOS33";
+#NET Data<3> LOC= "V15"| IOSTANDARD="LVCMOS33";
+#NET Data<4> LOC= "M11"| IOSTANDARD="LVCMOS33";
+#NET Data<5> LOC= "N11"| IOSTANDARD="LVCMOS33";
+#NET Data<6> LOC= "R11"| IOSTANDARD="LVCMOS33";
+#NET Data<7> LOC= "T11"| IOSTANDARD="LVCMOS33";
+
+NET Leds<0> LOC= "U16"| IOSTANDARD="LVCMOS33";
+NET Leds<1> LOC= "V16"| IOSTANDARD="LVCMOS33";
+NET Leds<2> LOC= "U15"| IOSTANDARD="LVCMOS33";
+NET Leds<3> LOC= "V15"| IOSTANDARD="LVCMOS33";
+NET Leds<4> LOC= "M11"| IOSTANDARD="LVCMOS33";
+NET Leds<5> LOC= "N11"| IOSTANDARD="LVCMOS33";
+NET Leds<6> LOC= "R11"| IOSTANDARD="LVCMOS33";
+NET Leds<7> LOC= "T11"| IOSTANDARD="LVCMOS33";
+
+#------------------sensor luz-----------------
+NET ADC0 LOC = "H3" | IOSTANDARD="LVCMOS33";
+NET ADC1 LOC = "L7" | IOSTANDARD="LVCMOS33";
+NET ADC2 LOC = "K6" | IOSTANDARD="LVCMOS33";
+NET ADC3 LOC = "G3" | IOSTANDARD="LVCMOS33";
+NET ADC4 LOC = "G1" | IOSTANDARD="LVCMOS33";
+NET ADC5 LOC = "J7" | IOSTANDARD="LVCMOS33";
+NET ADC6 LOC = "J6" | IOSTANDARD="LVCMOS33";
+NET ADC7 LOC = "F2" | IOSTANDARD="LVCMOS33";
+
+
+#LCD 
+
+NET lcd_db<0> LOC = "K2" | IOSTANDARD="LVCMOS33";
+NET lcd_db<1> LOC = "K1" | IOSTANDARD="LVCMOS33";
+NET lcd_db<2> LOC = "L4" | IOSTANDARD="LVCMOS33";
+NET lcd_db<3> LOC = "L3" | IOSTANDARD="LVCMOS33";
+NET lcd_db<4> LOC = "J3" | IOSTANDARD="LVCMOS33";
+NET lcd_db<5> LOC = "J1" | IOSTANDARD="LVCMOS33";
+NET lcd_db<6> LOC = "K3" | IOSTANDARD="LVCMOS33";
+NET lcd_db<7> LOC = "K5" | IOSTANDARD="LVCMOS33";
+
+
+NET lcd_e LOC = "T12" | IOSTANDARD="LVCMOS33";
+NET lcd_rw LOC = "V12" | IOSTANDARD="LVCMOS33";
+NET lcd_rs LOC = "N10" | IOSTANDARD="LVCMOS33";
+
+NET servoX  LOC = "C12" | IOSTANDARD="LVCMOS33";
+NET servoY  LOC = "F12" | IOSTANDARD="LVCMOS33";
+
+NET interruptor<0>  LOC = "V8" | IOSTANDARD="LVCMOS33";
+NET interruptor<1>  LOC = "T5" | IOSTANDARD="LVCMOS33";
+
+## JA
+Net "JA<0>" LOC = G11 | IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L19P, Sch name = JA1
+Net "JA<1>" LOC = F10 | IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L19N, Sch name = JA2  
+Net "JA<2>" LOC = F11 | IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L20P, Sch name = JA3
+Net "JA<3>" LOC = E11 | IOSTANDARD = LVCMOS33; #Bank = 2, pin name = IO_L20N, Sch name = JA4
+
+## 7 segment display
+Net "seg<0>" LOC = T17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L51P_M1DQ12, Sch name = CA
+Net "seg<1>" LOC = T18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L51N_M1DQ13, Sch name = CB
+Net "seg<2>" LOC = U17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L52P_M1DQ14, Sch name = CC
+Net "seg<3>" LOC = U18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L52N_M1DQ15, Sch name = CD
+Net "seg<4>" LOC = M14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L53P, Sch name = CE
+Net "seg<5>" LOC = N14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L53N_VREF, Sch name = CF
+Net "seg<6>" LOC = L14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L61P, Sch name = CG
+Net "dp" LOC = M13 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L61N, Sch name = DP
+#
+Net "an<0>" LOC = N16 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L50N_M1UDQSN, Sch name = AN0
+Net "an<1>" LOC = N15 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L50P_M1UDQS, Sch name = AN1
+Net "an<2>" LOC = P18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L49N_M1DQ11, Sch name = AN2
+Net "an<3>" LOC = P17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L49P_M1DQ10, Sch name = AN3
+
+Net start LOC = T10 | IOSTANDARD = LVCMOS33; 
+Net sel<0> LOC = V9 | IOSTANDARD = LVCMOS33; 
+Net sel<1> LOC = M8 | IOSTANDARD = LVCMOS33; 
+Net ds LOC = N8 | IOSTANDARD = LVCMOS33; 

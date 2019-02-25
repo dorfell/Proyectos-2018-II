@@ -1,0 +1,41 @@
+NET "anod<0>" LOC = "U18" ; # Bank = 1, Pin name = IO_L19N_1, Type = I/O, Sch name = AN0
+NET "anod<1>" LOC = "H15" ; # Bank = 1, Pin name = IO_L19N_1, Type = I/O, Sch name = AN0
+NET "disp<0>" LOC = "M13"; # Bank = 1, Pin name = IO_L10P_1, Type = I/O, Sch name = CA
+NET "disp<1>" LOC = "R18"; # Bank = 1, Pin name = IO_L19P_1, Type = I/O, Sch name = CB
+NET "disp<2>" LOC = "R15"; # Bank = 1, Pin name = IO_L23P_1/HDC, Type = DUAL, Sch name = CC
+NET "disp<3>" LOC = "T17"; # Bank = 1, Pin name = IO_L23N_1/LDC0, Type = DUAL, Sch name = CD
+NET "disp<4>" LOC = "P17"; # Bank = 1, Pin name = IO_L20P_1, Type = I/O, Sch name = CE
+NET "disp<5>" LOC = "R16"; # Bank = 1, Pin name = IO_L13P_1/A6/RHCLK4/IRDY1, Type = RHCLK/DUAL, Sch name = CF
+NET "disp<6>" LOC = "T18"; # Bank = 1, Pin name = IO_L17P_1, Type = I/O, Sch name = CG
+
+NET "CLK" LOC = "B8";
+NET "RST" LOC = "B18";
+NET "HSYNC" LOC = "T4";
+NET "VSYNC" LOC = "U3";
+
+NET "RGB<7>" LOC = "R9";
+NET "RGB<6>" LOC = "T8";
+NET "RGB<5>" LOC = "R8";
+NET "RGB<4>" LOC = "N8";
+NET "RGB<3>" LOC = "P8";
+NET "RGB<2>" LOC = "P6";
+NET "RGB<1>" LOC = "U5";
+NET "RGB<0>" LOC = "U4";
+
+
+NET "color<0>" LOC = "J12"; #parqueadero 3
+NET "color<1>" LOC = "J14"; #parqueadero 2
+NET "color<2>" LOC = "P18"; #parqueadero 1
+
+NET "texto<1>" LOC = "R4";
+NET "texto<0>" LOC = "F4";
+
+NET "PWM" LOC = "M15";
+NET "sensormotor<0>" LOC = "H18";
+NET "sensormotor<1>" LOC = "M16";
+
+ 
+NET "LED<0>" LOC = "L16";  #Sirve
+NET "LED<1>" LOC = "K13";
+NET "Chicharra<0>" LOC = "K12";
+NET "Chicharra<1>" LOC = "L15";

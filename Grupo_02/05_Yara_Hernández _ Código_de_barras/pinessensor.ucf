@@ -1,0 +1,9 @@
+NET sensor<0> LOC = "L15" | IOSTANDARD = LVCMOS33;
+NET sensor<1> LOC = "K12" | IOSTANDARD = LVCMOS33;
+NET sensor<2> LOC = "L17" | IOSTANDARD = LVCMOS33;
+NET buzzer    LOC = "M15" | IOSTANDARD = LVCMOS33;
+
+NET led<0>	  LOC = "J14" | IOSTANDARD = LVCMOS33;		#Bank = 34, Pin name = IO_L7P_T1_34,						Sch name = LED13
+NET led<1>	  LOC = "J15" | IOSTANDARD = LVCMOS33;		#Bank = 34, Pin name = IO_L15N_T2_DQS_34,					Sch name = LED14
+NET led<2>	  LOC = "K15" | IOSTANDARD = LVCMOS33;		#Bank = 34, Pin name = IO_L15P_T2_DQS_34,					Sch name = LED15
+

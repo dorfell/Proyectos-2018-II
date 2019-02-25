@@ -1,0 +1,11 @@
+net clk loc ="V10" | IOSTANDARD="LVCMOS33" ;
+net rst loc ="B8" | IOSTANDARD="LVCMOS33" ;
+net pwm_out2 loc ="U16" | IOSTANDARD="LVCMOS33" ;
+net pwm_out1 loc ="h3" | IOSTANDARD="LVCMOS33" ;
+net dip<0> loc ="T10" | IOSTANDARD="LVCMOS33" ;
+net dip<1> loc ="T9" | IOSTANDARD="LVCMOS33" ;
+net dip<2> loc ="V9" | IOSTANDARD="LVCMOS33" ;
+
+
+
+

@@ -1,0 +1,21 @@
+#reloj nexys 3
+net "clk100M" loc="V10" | iostandard=lvcmos33;
+#columns
+net "colum<0>" loc="T12" | iostandard=lvcmos33;
+net "colum<1>" loc="V12" | iostandard=lvcmos33;
+net "colum<2>" loc="N10" | iostandard=lvcmos33;
+net "colum<3>" loc="P11" | iostandard=lvcmos33;
+net "colum<4>" loc="M10" | iostandard=lvcmos33;
+net "colum<5>" loc="N9" | iostandard=lvcmos33;
+net "colum<6>" loc="U11" | iostandard=lvcmos33;
+net "colum<7>" loc="V11" | iostandard=lvcmos33;
+#rows
+net "row<0>" loc="K2" | iostandard=lvcmos33;
+net "row<1>" loc="K1" | iostandard=lvcmos33;
+net "row<2>" loc="L4" | iostandard=lvcmos33;
+net "row<3>" loc="L3" | iostandard=lvcmos33;
+net "row<4>" loc="J3" | iostandard=lvcmos33;
+net "row<5>" loc="J1" | iostandard=lvcmos33;
+net "row<6>" loc="K3" | iostandard=lvcmos33;
+net "row<7>" loc="K5" | iostandard=lvcmos33;
+ 
