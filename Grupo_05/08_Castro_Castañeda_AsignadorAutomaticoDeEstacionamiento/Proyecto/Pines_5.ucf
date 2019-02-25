@@ -1,0 +1,42 @@
+NET "clk"         LOC = "B8";    # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                 Sch name = GCLK0
+#TIMESPEC TS_clk = PERIOD "clk" 50 MHz HIGH 50%;  
+NET "reset"      LOC = "B18";   # Bank = 1, Pin name = IP, Type = INPUT,                             Sch name = BTN0
+NET "PS2C"        LOC = "R12";   # Bank = 2, Pin name = IO_L20N_2, Type = I/O,                        Sch name = PS2C
+NET "PS2D"        LOC = "P11";   # Bank = 2, Pin name = IO_L18P_2, Type = I/O,                        Sch name = PS2D
+#NET "ascii_code2<0>"      LOC = "c17";   # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,       Sch name = JD10/LD0
+#NET "ascii_code2<1>"      LOC = "H14";   # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL,       Sch name = JD9/LD1
+#NET "ascii_code2<2>"      LOC = "J17";   # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL,       Sch name = JD8/LD2
+#NET "ascii_code2<3>"      LOC = "G14";   # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL, Sch name = JD7/LD3
+#NET "ascii_code2<4>"      LOC = "D16";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD4? s3e500 only
+#NET "ascii_code2<5>"      LOC = "D17";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD5? s3e500 only
+#NET "ascii_code2<6>"      LOC = "F18";    # Bank = 3, Pin name = IO, Type = I/O,                               Sch name = LD6? s3e500 only
+#NET "ascii_code2<7>"      LOC = "L18";    # Bank = 3, Pin name = IO/VREF_3, Type = VREF,                       Sch name = LD7? s3e500 only
+#
+#NET "anode2<0>"       LOC = "F17";   # Bank = 1, Pin name = IO_L19N_1, Type = I/O,                        Sch name = AN0
+#NET "anode2<1>"       LOC = "H17";   # Bank = 1, Pin name = IO_L16N_1/A0, Type = DUAL,                    Sch name = AN1
+#NET "anode2<2>"       LOC = "C18";   # Bank = 1, Pin name = IO_L24P_1/LDC1, Type = DUAL,                  Sch name = AN2
+#NET "anode2<3>"       LOC = "F15";   # Bank = 1, Pin name = IO_L21P_1, Type = I/O,                        Sch name = AN3
+#NET "prueba"      LOC = "J14";   # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,       Sch name = JD10/LD0
+
+
+#NET "ascii_code2<0>"      LOC = "J14";   # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,       Sch name = JD10/LD0
+#NET "ascii_code2<1>"      LOC = "J15";   # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL,       Sch name = JD9/LD1
+#NET "ascii_code2<2>"      LOC = "K15";   # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL,       Sch name = JD8/LD2
+#NET "ascii_code2<3>"      LOC = "K14";   # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL, Sch name = JD7/LD3
+#NET "ascii_code2<4>"      LOC = "E17";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD4? s3e500 only
+#NET "ascii_code2<5>"      LOC = "P15";   # Bank = 1, Pin name = IO, Type = I/O,                               Sch name = LD5? s3e500 only
+#NET "ascii_code2<6>"      LOC = "F4";    # Bank = 3, Pin name = IO, Type = I/O,                               Sch name = LD6? s3e500 only
+#NET "ascii_code2<7>"      LOC = "R4";    # Bank = 3, Pin name = IO/VREF_3, Type = VREF,                       Sch name = LD7? s3e500 only
+
+## VGA Connector 
+NET "rgb<0>"   LOC = "R9";    # Bank = 2, Pin name = IO/D5, Type = DUAL, Sch name = RED0
+NET "rgb<1>"   LOC = "T8";    # Bank = 2, Pin name = IO_L10N_2, Type = I/O,                        Sch name = RED1
+NET "rgb<2>"   LOC = "R8";    # Bank = 2, Pin name = IO_L10P_2, Type = I/O,                        Sch name = RED2
+NET "rgb<3>" LOC = "N8";    # Bank = 2, Pin name = IO_L09N_2, Type = I/O,                        Sch name = GRN0
+NET "rgb<4>" LOC = "P8";    # Bank = 2, Pin name = IO_L09P_2, Type = I/O,                        Sch name = GRN1
+NET "rgb<5>" LOC = "P6";    # Bank = 2, Pin name = IO_L05N_2, Type = I/O,                        Sch name = GRN2
+NET "rgb<6>"  LOC = "U5";    # Bank = 2, Pin name = IO/VREF_2, Type = VREF,                       Sch name = BLU1
+NET "rgb<7>"  LOC = "U4";    # Bank = 2, Pin name = IO_L03P_2/DOUT/BUSY, Type = DUAL,             Sch name = BLU2
+
+NET "Hsync"       LOC = "T4";    # Bank = 2, Pin name = IO_L03N_2/MOSI/CSI_B, Type = DUAL,            Sch name = HSYNC
+NET "Vsync"       LOC = "U3";    # Bank = 2, Pin name = IO_L01P_2/CSO_B, Type = DUAL,                 Sch name = VSYNC

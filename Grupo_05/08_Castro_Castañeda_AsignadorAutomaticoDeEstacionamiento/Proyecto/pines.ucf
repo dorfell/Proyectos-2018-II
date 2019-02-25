@@ -1,0 +1,21 @@
+NET "clk"         LOC = "B8";    # Bank = 0, Pin name = IP_L13P_0/GCLK8, Type = GCLK,                 Sch name = GCLK0
+
+
+## 7 segment display
+## 7 segment display
+NET "sseg<7>"      LOC = "L18";   # Bank = 1, Pin name = IO_L10P_1, Type = I/O,                        Sch name = CA
+NET "sseg<6>"      LOC = "F18";   # Bank = 1, Pin name = IO_L19P_1, Type = I/O,                        Sch name = CB
+NET "sseg<5>"      LOC = "D17";   # Bank = 1, Pin name = IO_L23P_1/HDC, Type = DUAL,                   Sch name = CC
+NET "sseg<4>"      LOC = "D16";   # Bank = 1, Pin name = IO_L23N_1/LDC0, Type = DUAL,                  Sch name = CD
+NET "sseg<3>"      LOC = "G14";   # Bank = 1, Pin name = IO_L20P_1, Type = I/O,                        Sch name = CE
+NET "sseg<2>"      LOC = "J17";   # Bank = 1, Pin name = IO_L13P_1/A6/RHCLK4/IRDY1, Type = RHCLK/DUAL, Sch name = CF
+NET "sseg<1>"      LOC = "H14";   # Bank = 1, Pin name = IO_L17P_1, Type = I/O,                        Sch name = CG
+NET "sseg<0>"          LOC = "C17";   # Bank = 1, Pin name = IO_L24N_1/LDC2, Type = DUAL,                  Sch name = DP
+
+NET "anode<0>"       LOC = "F17";   # Bank = 1, Pin name = IO_L19N_1, Type = I/O,                        Sch name = AN0
+NET "anode<1>"       LOC = "H17";   # Bank = 1, Pin name = IO_L16N_1/A0, Type = DUAL,                    Sch name = AN1
+NET "anode<2>"       LOC = "C18";   # Bank = 1, Pin name = IO_L24P_1/LDC1, Type = DUAL,                  Sch name = AN2
+NET "anode<3>"       LOC = "F15";   # Bank = 1, Pin name = IO_L21P_1, Type = I/O,                        Sch name = AN3
+
+##button
+NET "reset"      LOC = "B18";   # Bank = 1, Pin name = IP, Type = INPUT,                             Sch name = BTN0

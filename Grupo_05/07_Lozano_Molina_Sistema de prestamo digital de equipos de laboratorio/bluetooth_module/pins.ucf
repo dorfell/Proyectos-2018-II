@@ -1,0 +1,21 @@
+net clk LOC = "E3" | IOSTANDARD = LVCMOS33;		#Sch name = CLK100MHZ
+net rst LOC = "T16"  | IOSTANDARD = LVCMOS33;	#Sch name = BTNC
+net txEn LOC = "P4" | IOSTANDARD = LVCMOS33;		#Sch name = SW15
+
+net txData<7> LOC = "U8"	| IOSTANDARD = LVCMOS33;		#Sch name = SW1
+net txData<6> LOC = "R7"	| IOSTANDARD = LVCMOS33;		#Sch name = SW2
+net txData<5> LOC = "R6"	| IOSTANDARD = LVCMOS33;		#Sch name = SW3
+net txData<4> LOC = "R5"	| IOSTANDARD = LVCMOS33;		#Sch name = SW4
+net txData<3> LOC = "V7"	| IOSTANDARD = LVCMOS33;		#Sch name = SW5
+net txData<2> LOC = "V6"	| IOSTANDARD = LVCMOS33;		#Sch name = SW6
+net txData<1> LOC = "V5"	| IOSTANDARD = LVCMOS33;		#Sch name = SW7
+net txData<0> LOC = "U4"	| IOSTANDARD = LVCMOS33;		#Sch name = SW8
+
+#net nbits<3> LOC = "V2"	| IOSTANDARD = LVCMOS33;		#Sch name = SW9
+#net nbits<2> LOC = "U2"	| IOSTANDARD = LVCMOS33;		#Sch name = SW10
+#net nbits<1> LOC = "T3"	| IOSTANDARD = LVCMOS33;		#Sch name = SW11
+#net nbits<0> LOC = "T1"	| IOSTANDARD = LVCMOS33;		#Sch name = SW12
+
+net txDone LOC = "T8" | IOSTANDARD = LVCMOS33;		#Sch name = LED0
+net tx LOC = "G14"	| IOSTANDARD = LVCMOS33;		#Sch name = JB1
+net c_ticks LOC = "P15"	| IOSTANDARD = LVCMOS33;		#Sch name = JB2
