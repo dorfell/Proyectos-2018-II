@@ -1,0 +1,48 @@
+NET  clock       LOC = "B8";
+NET  reset	     LOC = "B18";
+NET  start       LOC = "D18";
+
+# Debugging leds
+NET  LED_MISO    LOC = "K15";
+NET  SCK  	     LOC = "J15";
+NET  CS          LOC = "J14";
+
+# Debugging PMOD
+NET  MISO        LOC = "J13";
+NET  SCK  	     LOC = "M18";
+NET  CS          LOC = "N18";
+
+#LCD
+
+
+NET ENA LOC= "L15";
+NET RS  LOC= "K12";
+NET RW  LOC= "L17";
+
+
+NET DATA_LCD<0> LOC= "K13";
+NET DATA_LCD<1> LOC= "L16";	
+NET DATA_LCD<2> LOC= "M14";
+NET DATA_LCD<3> LOC= "M16";
+
+#motor y buzzer
+
+NET motor LOC= "G15";
+NET audio LOC= "J16";
+
+
+
+
+
+
+
+
+
+
+ 
+
+#NET enable1		 LOC = "U16";
+#NET enable2		 LOC = "V16";
+
+#NET pmod1			LOC = "T12";
+#NET pmod2 			LOC =  "V12";
