@@ -1,0 +1,37 @@
+net leds<0> loc="T11" | IOSTANDARD="LVCMOS33"; //G11
+net leds<1> loc="R11" | IOSTANDARD="LVCMOS33"; //F10
+net leds<2> loc="N11" | IOSTANDARD="LVCMOS33"; //F11
+
+
+net columnas<0> loc="H3" | IOSTANDARD="LVCMOS33"; //G11 //Conectar desde adentro hacia afuera
+net columnas<1> loc="L7" | IOSTANDARD="LVCMOS33"; //F10
+net columnas<2> loc="K6" | IOSTANDARD="LVCMOS33"; //F10
+net columnas<3> loc="G3" | IOSTANDARD="LVCMOS33"; //F10
+
+net disp<0> loc="L14"| IOSTANDARD="LVCMOS33"; # seg g
+net disp<1> loc="N14"| IOSTANDARD="LVCMOS33"; # seg f
+net disp<2> loc="M14"| IOSTANDARD="LVCMOS33"; # seg e
+net disp<3> loc="U18"| IOSTANDARD="LVCMOS33"; # seg d
+net disp<4> loc="U17"| IOSTANDARD="LVCMOS33"; # seg c
+net disp<5> loc="T18"| IOSTANDARD="LVCMOS33"; # seg b
+net disp<6> loc="T17"| IOSTANDARD="LVCMOS33"; # seg a
+
+
+net comun<0> loc="N16"| IOSTANDARD="LVCMOS33";#$ displays
+net comun<1> loc="N15"| IOSTANDARD="LVCMOS33";
+net comun<2> loc="P18"| IOSTANDARD="LVCMOS33";
+net comun<3> loc="P17"| IOSTANDARD="LVCMOS33";
+
+
+net fleds<0> loc="M11" | IOSTANDARD="LVCMOS33"; //M11
+net fleds<1> loc="V15" | IOSTANDARD="LVCMOS33"; //V15
+net fleds<2> loc="U15" | IOSTANDARD="LVCMOS33"; //U16
+net fleds<3> loc="V16" | IOSTANDARD="LVCMOS33"; //V16
+
+net filas<0> loc="G1" | IOSTANDARD="LVCMOS33";
+net filas<1> loc="J7" | IOSTANDARD="LVCMOS33";
+net filas<2> loc="J6" | IOSTANDARD="LVCMOS33";
+net filas<3> loc="F2" | IOSTANDARD="LVCMOS33";
+
+net start loc ="T10"| IOSTANDARD="LVCMOS33";
+net clk loc ="V10"| IOSTANDARD="LVCMOS33";

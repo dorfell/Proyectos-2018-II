@@ -1,0 +1,4 @@
+net clk loc="B8";
+net reset loc="H13";
+net nota loc="G15";
+net activar loc="R17";

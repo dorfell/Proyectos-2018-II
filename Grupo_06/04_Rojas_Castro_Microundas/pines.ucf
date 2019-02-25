@@ -1,0 +1,119 @@
+
+//////////____________________________________________ Nexys 3_____________________________________________________________
+//////////_________________________________________________________________________________________________________________
+
+#
+NET clk LOC = V10 | IOSTANDARD="LVCMOS33";
+NET reset LOC = A8 | IOSTANDARD="LVCMOS33";
+NET reset_1 LOC = B8 | IOSTANDARD="LVCMOS33";
+#
+
+#_____________________________________________________________________________tipo de sim
+NET sim<0> LOC = T5 | IOSTANDARD="LVCMOS33";
+NET sim<1> LOC = V8 | IOSTANDARD="LVCMOS33";	
+
+NET botf<0> LOC = T10 | IOSTANDARD="LVCMOS33";
+NET botf<1> LOC = T9 | IOSTANDARD="LVCMOS33";
+
+#_____________________________________________________________________________SERVO
+#NET selector<0> LOC = U8 | IOSTANDARD="LVCMOS33";
+#NET selector LOC = N8 | IOSTANDARD="LVCMOS33";
+NET PWM LOC = F2 | IOSTANDARD="LVCMOS33";//morado  JB10
+NET Bzz LOC = G3 | IOSTANDARD="LVCMOS33";
+
+#led
+NET led LOC = T11 | IOSTANDARD="LVCMOS33";
+NET led2 LOC = R11 | IOSTANDARD="LVCMOS33";
+
+#
+#//____________________________________________________________________________LCD
+
+#NET lcd_db<3> LOC = K2 | IOSTANDARD="LVCMOS33";  //JD1
+#NET lcd_db<2> LOC = K1 | IOSTANDARD="LVCMOS33";
+#NET lcd_db<1> LOC = L4 | IOSTANDARD="LVCMOS33";
+#NET lcd_db<0> LOC = L3 | IOSTANDARD="LVCMOS33";// JD4
+#NET lcd_db<7> LOC = J3 | IOSTANDARD="LVCMOS33";
+#NET lcd_db<6> LOC = J1 | IOSTANDARD="LVCMOS33";
+#NET lcd_db<5> LOC = K3 | IOSTANDARD="LVCMOS33";
+#NET lcd_db<4> LOC = K5 | IOSTANDARD="LVCMOS33";//  JD10
+
+NET lcd_db<3> LOC = G11 | IOSTANDARD="LVCMOS33";  //JD1
+NET lcd_db<2> LOC = F10 | IOSTANDARD="LVCMOS33";
+NET lcd_db<1> LOC = F11 | IOSTANDARD="LVCMOS33";
+NET lcd_db<0> LOC = E11 | IOSTANDARD="LVCMOS33";// JD4
+NET lcd_db<7> LOC = D12 | IOSTANDARD="LVCMOS33";
+NET lcd_db<6> LOC = C12 | IOSTANDARD="LVCMOS33";
+NET lcd_db<5> LOC = F12 | IOSTANDARD="LVCMOS33";
+NET lcd_db<4> LOC = E12 | IOSTANDARD="LVCMOS33";//  JD10
+
+
+NET lcd_e LOC = H3 | IOSTANDARD="LVCMOS33";//naranja   JC1
+NET lcd_rw LOC = L7 | IOSTANDARD="LVCMOS33";//amarillo JC2
+NET lcd_rs LOC = K6 | IOSTANDARD="LVCMOS33";//verde  JC3
+
+
+//-----------------------------------TECLADO------------------------------------------------------------------ TECLADO 
+
+## 7 segment display
+Net seg7<0> LOC = T17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L51P_M1DQ12, Sch name = CA
+Net seg7<1> LOC = T18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L51N_M1DQ13, Sch name = CB
+Net seg7<2> LOC = U17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L52P_M1DQ14, Sch name = CC
+Net seg7<3> LOC = U18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L52N_M1DQ15, Sch name = CD
+Net seg7<4> LOC = M14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L53P, Sch name = CE
+Net seg7<5> LOC = N14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L53N_VREF, Sch name = CF
+Net seg7<6> LOC = L14 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L61P, Sch name = CG
+## Anodos
+Net display<0> LOC = N16 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L50N_M1UDQSN, Sch name = AN0
+Net display<1> LOC = N15 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L50P_M1UDQS, Sch name = AN1
+Net display<2> LOC = P18 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L49N_M1DQ11, Sch name = AN2
+Net display<3> LOC = P17 | IOSTANDARD = LVCMOS33; #Bank = 1, pin name = IO_L49P_M1DQ10, Sch name = AN3
+
+//__________________JA
+## Columnas
+Net col<0> LOC = T12 | IOSTANDARD = LVCMOS33; 
+Net col<1> LOC = V12 | IOSTANDARD = LVCMOS33; 
+Net col<2> LOC = N10 | IOSTANDARD = LVCMOS33;
+Net col<3> LOC = P11 | IOSTANDARD = LVCMOS33;
+## Filas
+Net fila<0> LOC = M10 | IOSTANDARD = LVCMOS33; 
+Net fila<1> LOC = N9 | IOSTANDARD = LVCMOS33; 
+Net fila<2> LOC = U11 | IOSTANDARD = LVCMOS33; 
+Net fila<3> LOC = V11 | IOSTANDARD = LVCMOS33;
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////____________________________________________ Nexys 3_____________________________________________________________
+//////////_________________________________________________________________________________________________________________
+
+#
+#NET clk LOC = "V10" | IOSTANDARD="LVCMOS33";
+#NET reset LOC = "B8" | IOSTANDARD="LVCMOS33";
+#
+#//NET bot<0> LOC = "T10" | IOSTANDARD="LVCMOS33";
+#//NET bot<1> LOC = "T9" | IOSTANDARD="LVCMOS33";	
+#
+#
+#//---------------------------------------------------------------------------LCD
+#NET lcd_db<0> LOC = "F2" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<1> LOC = "J6" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<2> LOC = "J7" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<3> LOC = "G1" | IOSTANDARD="LVCMOS33";//verde
+#NET lcd_db<4> LOC = "G3" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<5> LOC = "K6" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<6> LOC = "L7" | IOSTANDARD="LVCMOS33";
+#NET lcd_db<7> LOC = "H3" | IOSTANDARD="LVCMOS33";//morado
+#
+#NET lcd_e LOC = "K2" | IOSTANDARD="LVCMOS33";//naranja
+#NET lcd_rw LOC = "K1" | IOSTANDARD="LVCMOS33";//amarillo
+#NET lcd_rs LOC = "L4" | IOSTANDARD="LVCMOS33";//verde
+
