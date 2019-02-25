@@ -1,0 +1,93 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    10:56:31 11/08/2018 
+-- Design Name: 
+-- Module Name:    LIB_ULTRASONICO_REVB - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity LIB_ULTRASONICO_REVB is
+
+PORT(
+		CLK,ECO : IN STD_LOGIC;
+		TRIGGER : OUT STD_LOGIC;
+		DISTANCIA_CENTIMETROS : OUT INTEGER
+);
+
+end LIB_ULTRASONICO_REVB;
+
+architecture Behavioral of LIB_ULTRASONICO_REVB is
+
+CONSTANT ESCALA_PERIODO_TRIGGER : INTEGER := 6_000_000;
+
+CONSTANT ESCALA_TRIGGER : INTEGER := 1_000;
+
+SIGNAL CONTA_TRIGGER : INTEGER RANGE 0 TO ESCALA_PERIODO_TRIGGER := 0;
+
+SIGNAL CONTA_ECO, ESCALA_TOTAL : INTEGER := 0;
+
+SIGNAL BANDERA : STD_LOGIC := '1';
+
+SIGNAL TIEMPO_MICROSEGUNDOS : INTEGER := 0;
+
+
+begin
+
+
+--PROCESO QUE GENERA SEÑAL DE TRIGGER---
+PROCESS(CLK)
+BEGIN
+	IF RISING_EDGE(CLK) THEN
+		CONTA_TRIGGER <= CONTA_TRIGGER+1;
+		IF CONTA_TRIGGER = 0 THEN
+			TRIGGER <= '1';
+		ELSIF CONTA_TRIGGER = ESCALA_TRIGGER THEN
+			TRIGGER <= '0';
+		ELSIF CONTA_TRIGGER = ESCALA_PERIODO_TRIGGER THEN
+			CONTA_TRIGGER <= 0;
+		END IF;
+	END IF;
+END PROCESS;
+----------------------------------------
+
+--PROCESO QUE OBTIENE ESCALA DE ECO---
+PROCESS(CLK)
+BEGIN
+	IF RISING_EDGE(CLK) THEN
+		IF CONTA_TRIGGER = ESCALA_TRIGGER THEN
+			BANDERA <= '1';
+		END IF;
+	
+		IF ECO = '1' THEN
+			CONTA_ECO <= CONTA_ECO+1;
+		ELSIF ECO = '0' AND BANDERA = '1' THEN
+			BANDERA <= '0';
+			ESCALA_TOTAL <= CONTA_ECO;
+			CONTA_ECO <= 0;
+		END IF;
+	END IF;
+END PROCESS;
+
+--------------------------------------
+
+TIEMPO_MICROSEGUNDOS <= ESCALA_TOTAL/50; --OPERACIÓN QUE CONVIERTE VALOR DE "ESCALA TOTAL" A TIEMPO EN MICROSEGUNDOS
+DISTANCIA_CENTIMETROS <= TIEMPO_MICROSEGUNDOS/145; --OPERACIÓN QUE CONVIERTE "TIEMPO_EN_MICROSEGUNDOS" A DISTANCIA EN CENTÍMETROS
+
+end Behavioral;
+

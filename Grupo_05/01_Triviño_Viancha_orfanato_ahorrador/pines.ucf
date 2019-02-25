@@ -1,0 +1,29 @@
+NET clk LOC = "V10" | IOSTANDARD="LVCMOS33";
+NET rst LOC = "A8" | IOSTANDARD="LVCMOS33";
+
+NET lcd_db<0> LOC = "T12" | IOSTANDARD="LVCMOS33";
+NET lcd_db<1> LOC = "V12" | IOSTANDARD="LVCMOS33";
+NET lcd_db<2> LOC = "N10" | IOSTANDARD="LVCMOS33";
+NET lcd_db<3> LOC = "P11" | IOSTANDARD="LVCMOS33";
+NET lcd_db<4> LOC = "M10" | IOSTANDARD="LVCMOS33";
+NET lcd_db<5> LOC = "N9" | IOSTANDARD="LVCMOS33";
+NET lcd_db<6> LOC = "U11" | IOSTANDARD="LVCMOS33";
+NET lcd_db<7> LOC = "V11" | IOSTANDARD="LVCMOS33";
+
+
+NET lcd_e LOC = "L4" | IOSTANDARD="LVCMOS33";
+NET lcd_rw LOC = "K1" | IOSTANDARD="LVCMOS33";
+NET lcd_rs LOC = "K2" | IOSTANDARD="LVCMOS33";
+
+NET "trigger"          LOC = "K5" | IOSTANDARD = "LVCMOS33";
+NET "eco"           LOC = "K3" | IOSTANDARD = "LVCMOS33";
+net "start"				LOC = "c4" | IOSTANDARD = LVCMOS33;    
+#net "salresis"			loc ="v15" | IOSTANDARD = LVCMOS33; 
+net "entresis"			loc ="L3" | IOSTANDARD = LVCMOS33; 
+net "luz"			loc ="v16" | IOSTANDARD = LVCMOS33;
+
+net "luz2"			loc ="J1" | IOSTANDARD = LVCMOS33;
+#NET "sw"          LOC = "T10" | IOSTANDARD = "LVCMOS33";                      
+
+net "buzzer"			loc ="J3" | IOSTANDARD = LVCMOS33;
+
